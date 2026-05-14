@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure PDF Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loginBox" class="container">
+        <h2>Protected PDF Access</h2>
+
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button onclick="checkPassword()">
+            Open PDF
+        </button>
+
+        <p id="error"></p>
+    </div>
+
+    <div id="pdfContainer" style="display:none;">
+        <iframe src="sample.pdf" id="pdfViewer"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
